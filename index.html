@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Progress</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="progress">
+      <div class="progress__block">
+        <svg class="progress__ring">
+          <circle
+            class="progress-ring__circle-background"
+            stroke="#f0efef"
+            stroke-width="10"
+            fill="transparent"
+            r="70"
+            cx="90"
+            cy="90"
+          />
+          <circle
+            class="progress-ring__circle"
+            stroke="#0000ff"
+            stroke-width="10"
+            fill="transparent"
+            r="70"
+            cx="90"
+            cy="90"
+          />
+        </svg>
+      </div>
+
+      <div class="progress__controls">
+        <div class="progress__controlbox">
+          <label class="progress__input-label">
+            <input class="progress__input" value="75" type="number" />
+          </label>
+          <p class="progress__legend">Value</p>
+        </div>
+
+        <div class="progress__controlbox">
+          <label class="progress__switch">
+            <input class="progress__input-animate" type="checkbox" />
+            <span class="progress__slider-round"></span>
+          </label>
+          <p class="progress__legend">Animate</p>
+        </div>
+
+        <div class="progress__controlbox">
+          <label class="progress__switch">
+            <input class="progress__input-hide" type="checkbox" />
+            <span class="progress__slider-round"></span>
+          </label>
+          <p class="progress__legend">Hide</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="warning warning-hide">Необходимо ввести число от 0 до 100!</div>
+  </body>
+</html>
