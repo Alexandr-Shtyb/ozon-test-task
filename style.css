@@ -113,12 +113,19 @@ input:checked + .progress__slider-round:before {
 }
 
 .progress__input {
-  width: 45px;
+  width: 40px;
   height: 26px;
   border-radius: 34px;
   border: 2px solid #413b3b;
   text-align: center;
   font-size: inherit;
+  padding: 3px 4px;
+}
+
+.progress__input-animate,
+.progress__input-hide {
+  width: 40px;
+  height: 26px;
 }
 
 .progress__input:focus {
